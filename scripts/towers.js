@@ -10,6 +10,8 @@ var tower = {};
 
 
 tower.gun = {
+    length: 0.8,
+    radius: 1,
     // Display
     color: [249, 191, 59],
     secondary: [149, 165, 166],
