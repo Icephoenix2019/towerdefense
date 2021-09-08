@@ -49,6 +49,7 @@ var towerType;
 
 var sounds;             // dict of all sounds
 var boomSound;          // explosion sound effect
+var imagelib;
 
 // TODO add more functionality to god mode
 var godMode = false;    // make player immortal for test purposes
@@ -401,6 +402,12 @@ function loadSounds() {
     // Taunt enemy death
     sounds.taunt = loadSound('sounds/taunt.wav');
     sounds.taunt.setVolume(0.3);
+}
+
+function loadImages() {
+    imagelib = {};
+
+    imagelib.basic = loadImage('img/basic.png');
 }
 
 // Increment wave counter and prepare wave
@@ -776,6 +783,7 @@ function walkable(col, row) {
 
 function preload() {
     loadSounds();
+    loadImages();
 }
 
 function setup() {
