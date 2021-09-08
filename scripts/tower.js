@@ -81,9 +81,13 @@ class Tower {
 
     // Draw base of tower (stationary part)
     drawBase() {
+        if (imagelib.hasOwnProperty(this.imageBase) {
+        image(imagelib[this.imageBase], this.pos.x, this.pos.y);
+        } else {
         stroke(this.border);
         fill(this.color);
         ellipse(this.pos.x, this.pos.y, this.radius * ts, this.radius * ts);
+        }
     }
 
     // Returns damage range
