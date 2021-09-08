@@ -12,13 +12,11 @@ var tower = {};
 tower.gun = {
     // Display
     color: [249, 191, 59],
-    length: 0.65,
-    radius: 0.9,
     secondary: [149, 165, 166],
     // Misc
     name: 'gun',
     title: 'Gun Tower',
-    imageBase: 'basic'
+    imageBase: 'basic',
     // Stats
     cooldownMax: 18,
     cooldownMin: 8,
