@@ -82,7 +82,7 @@ class Tower {
 
     // Draw base of tower (stationary part)
     drawBase() {
-        if (imagelib.hasOwnProperty(this.imageBase) {
+        if (imagelib.hasOwnProperty(this.imageBase)) {
             image(imagelib[this.imageBase], this.pos.x, this.pos.y);
         } else {
             stroke(this.border);
