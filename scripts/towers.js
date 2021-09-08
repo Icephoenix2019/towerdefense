@@ -18,6 +18,7 @@ tower.gun = {
     // Misc
     name: 'gun',
     title: 'Gun Tower',
+    imageBase: 'basic'
     // Stats
     cooldownMax: 18,
     cooldownMin: 8,
