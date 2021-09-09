@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="author" content="Amelia Clarke">
+    <meta name="author" content="Nathan Hock">
     <title>Tower Defense</title>
     <link href="style.css" rel="stylesheet">
     <script src="scripts/lib/lz-string.min.js" defer></script>
@@ -24,7 +24,7 @@
   </head>
   <body>
     <header>
-      <h1>Tower Defense</h1>
+      <h1>Tower Defense 2 (Improvised)</h1>
     </header>
 
     <main>
@@ -97,7 +97,8 @@
             <p id="cooldown"></p>
             <div class="horiz-buttons" id="info-buttons">
               <button id="sell" onclick="if (selected) sell(selected)">Sell</button>
-              <button id="upgrade" onclick="if (selected && selected.upgrades.length > 0) upgrade(selected.upgrades[0])">Upgrade</button>
+              <button id="upgrade" onclick="if (selected && selected.upgrades.length > 0) upgrade(selected.upgrades[0])">Tier 1</button>
+              <button id="upgrade" onclick="if (selected && selected.upgrades.length > 0) upgrade(selected.upgrades[1])">Tier 2</button>
             </div>
           </div>
         </aside>
