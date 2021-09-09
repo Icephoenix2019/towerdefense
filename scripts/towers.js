@@ -189,10 +189,9 @@ tower.laser = {
     // Display
     color: [185, 0, 0],
     length: 1,
-    width: 0,
+    width: 1,
     radius: 1,
     secondary: [149, 165, 166],
-    width: 0.25,
     // Misc
     name: 'laser',
     title: 'Laser Tower',
@@ -215,7 +214,7 @@ tower.laser = {
             radius: 1,
             secondary: [191, 191, 191],
             weight: 3,
-            width: 0,
+            width: 1,
             // Misc
             name: 'beamEmitter',
             title: 'Beam Emitter',
@@ -266,7 +265,7 @@ tower.laser = {
             radius: 1,
             secondary: [191, 191, 191],
             weight: 3,
-            width: 0,
+            width: 1,
             // Misc
             name: 'laserplus',
             title: 'Laser Tower +',
