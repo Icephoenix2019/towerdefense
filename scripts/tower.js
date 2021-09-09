@@ -77,7 +77,7 @@ class Tower {
     // Draw barrel of tower (moveable part)
     drawBarrel() {
     if (imagelib.hasOwnProperty(this.imageBarrel)) {
-            image(imagelib[this.imageBarrel], this.pos.x, this.pos.y, this.radius * ts, this.radius * ts);
+            image(imagelib[this.imageBarrel], this.pos.x - 32, this.pos.y - 32, this.radius * ts, this.radius * ts);
         } else {
         stroke(this.border);
         fill(this.secondary);
