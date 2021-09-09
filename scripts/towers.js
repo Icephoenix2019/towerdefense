@@ -185,6 +185,7 @@ tower.gem = {
 };
 
 tower.laser = {
+    baseOnTop: false,
     // Display
     color: [185, 0, 0],
     length: 1,
