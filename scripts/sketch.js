@@ -410,6 +410,8 @@ function loadImages() {
     imagelib.basic = loadImage('img/basic.png');
     imagelib.basic2 = loadImage('img/basic2.png');
     imagelib.basic3 = loadImage('img/basic3.png');
+    imagelib.flak = loadImage('img/flak.png');
+    imagelib.flakcannon = loadImage('img/flakcannon.png');
 }
 
 // Increment wave counter and prepare wave
