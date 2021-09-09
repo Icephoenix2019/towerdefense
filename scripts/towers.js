@@ -59,6 +59,79 @@ tower.gun = {
     ]
 };
 
+tower.gem = {
+    length: 0.8,
+    radius: 1,
+    // Display
+    color: [196, 104, 190],
+    hasBarrel: false,
+    // Misc
+    name: 'gem',
+    title: 'Gem Tower',
+    imageBase: 'basic',
+    // Stats
+    cooldownMax: 10,
+    cooldownMin: 1,
+    damageMax: 0,
+    damageMin: 0,
+    cost: 125,
+    range: 0.1,
+    // On Hit
+    onHit: function(e) {
+        cash += 1;
+    },
+    target: function(entities) {
+        if (stopFiring) return;
+        entities = this.visible(entities);
+        if (entities.length === 0) return;
+        if (!this.canFire()) return;
+        this.resetCooldown();
+        noStroke();
+        fill(this.color[0], this.color[1], this.color[2], 127);
+        var r = this.range * 2 + 1;
+        ellipse(this.pos.x, this.pos.y, r * ts, r * ts);
+        for (var i = 0; i < entities.length; i++) {
+            this.onAim(entities[i]);
+        }
+    },
+    // Upgrades
+    upgrades: [
+        {
+            // Display
+            color: [222, 69, 212],
+            // Misc
+            name: 'gemplus',
+            title: 'Gem Tower +',
+            imageBase: 'basic2',
+            // Stats
+            cooldownMax: 8,
+            cooldownMin: 1,
+            cost: 125,
+            damageMax: 0,
+            damageMin: 0,
+            onHit: function(e) {
+                cash += 2;
+            },
+                upgrades: [
+                {
+                    // Display
+                    color: [255, 0, 238],
+                    // Misc
+                    name: 'shard',
+                    title: 'Shard Tower',
+                    imageBase: 'basic3',
+                    // Stats
+                    cooldownMax: 8,
+                    cooldownMin: 1,
+                    cost: 300,
+                    damageMax: 10,
+                    damageMin: 10
+                }
+            ]
+        }
+    ]
+};
+
 tower.laser = {
     // Display
     color: [25, 181, 254],
