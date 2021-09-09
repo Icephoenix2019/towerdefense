@@ -408,6 +408,8 @@ function loadImages() {
     imagelib = {};
 
     imagelib.basic = loadImage('img/basic.png');
+    imagelib.basic2 = loadImage('img/basic2.png');
+    imagelib.basic3 = loadImage('img/basic3.png');
 }
 
 // Increment wave counter and prepare wave
