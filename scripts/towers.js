@@ -18,7 +18,8 @@ tower.gun = {
     // Misc
     name: 'gun',
     title: 'Gun Tower',
-    imageBase: 'basic',
+    imageBase: 'flak',
+    imageBarrel: 'flakcannon',
     // Stats
     cooldownMax: 18,
     cooldownMin: 8,
