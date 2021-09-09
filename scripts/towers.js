@@ -128,6 +128,44 @@ tower.gem = {
                     damageMin: 10
                 }
             ]
+        },
+        {
+            // Display
+            color: [204, 209, 67],
+            // Misc
+            name: 'gold',
+            title: 'Gold Mine',
+            imageBase: 'basic2',
+            // Stats
+            cooldownMax: 60,
+            cooldownMin: 60,
+            cost: 300,
+            damageMax: 0,
+            damageMin: 0,
+            range: 200,
+            onHit: function(e) {},
+            attack: function(e) {
+                cash += 5;
+            },
+                upgrades: [
+                {
+                    // Display
+                    color: [249, 235, 235],
+                    // Misc
+                    name: 'diamond',
+                    title: 'Diamond Mine',
+                    imageBase: 'basic3',
+                    // Stats
+                    cooldownMax: 80,
+                    cooldownMin: 80,
+                    cost: 700,
+                    damageMax: 0,
+                    damageMin: 0,
+                    attack: function(e) {
+                        cash += 12;
+                    }
+                }
+            ]
         }
     ]
 };
