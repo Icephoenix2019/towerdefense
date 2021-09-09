@@ -13,7 +13,7 @@ tower.gun = {
     length: 0.8,
     radius: 1,
     // Display
-    color: [249, 191, 59],
+    color: [179, 179, 179],
     secondary: [149, 165, 166],
     // Misc
     name: 'gun',
@@ -28,7 +28,7 @@ tower.gun = {
     upgrades: [
         {
             // Display
-            color: [249, 105, 14],
+            color: [86, 196, 86],
             // Misc
             name: 'machineGun',
             title: 'Machine Gun',
@@ -42,7 +42,7 @@ tower.gun = {
                 upgrades: [
                 {
                     // Display
-                    color: [249, 105, 14],
+                    color: [52, 227, 52],
                     // Misc
                     name: 'machineGunplus',
                     title: 'Machine Gun Plus',
