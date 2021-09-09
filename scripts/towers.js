@@ -75,10 +75,13 @@ tower.gem = {
     damageMax: 0,
     damageMin: 0,
     cost: 125,
-    range: 0.1,
+    range: 1,
     // On Hit
     onHit: function(e) {
         cash += 1;
+    },
+    onAim: function(e) {
+        this.attack(e);
     },
     target: function(entities) {
         if (stopFiring) return;
@@ -109,6 +112,7 @@ tower.gem = {
             cost: 125,
             damageMax: 0,
             damageMin: 0,
+            range: 1.5,
             onHit: function(e) {
                 cash += 2;
             },
