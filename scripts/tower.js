@@ -20,6 +20,7 @@ class Tower {
         this.sound = null;          // sound to play on fire
         this.title = 'Tower';
         this.imageBase = null;
+        this.imageBarrel = null;
 
         // Position
         this.angle = 0;
