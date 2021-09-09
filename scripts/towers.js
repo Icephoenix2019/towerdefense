@@ -262,7 +262,7 @@ tower.laser = {
         {
             // Display
             color: [0, 185, 185],
-            length: 0.65,
+            length: 1,
             radius: 1,
             secondary: [191, 191, 191],
             weight: 3,
