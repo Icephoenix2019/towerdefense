@@ -410,8 +410,17 @@ function loadImages() {
     imagelib.basic = loadImage('img/basic.png');
     imagelib.basic2 = loadImage('img/basic2.png');
     imagelib.basic3 = loadImage('img/basic3.png');
+    imagelib.laser = loadImage('img/laser.png');
+    imagelib.laser2 = loadImage('img/laser2.png');
+    imagelib.laser3 = loadImage('img/laser3.png');
+    imagelib.laser4 = loadImage('img/laser4.png');
     imagelib.flak = loadImage('img/flak.png');
     imagelib.flakcannon = loadImage('img/flakcannon.png');
+    imagelib.lasercannon = loadImage('img/lasercannon.png');
+    imagelib.lasercannon2 = loadImage('img/lasercannon2.png');
+    imagelib.lasercannon3 = loadImage('img/lasercannon3.png');
+    imagelib.lasercannon4 = loadImage('img/lasercannon4.png');
+  
 }
 
 // Increment wave counter and prepare wave
