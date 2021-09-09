@@ -11,8 +11,7 @@ var tower = {};
 
 tower.gun = {
     baseOnTop: false,
-    length: 1,
-    width: 1,
+    length: 0.80,
     radius: 1,
     // Display
     color: [179, 179, 179],
@@ -20,8 +19,7 @@ tower.gun = {
     // Misc
     name: 'gun',
     title: 'Gun Tower',
-    imageBase: 'flak',
-    imageBarrel: 'flakcannon',
+    imageBase: 'basic',
     // Stats
     cooldownMax: 18,
     cooldownMin: 8,
@@ -188,33 +186,40 @@ tower.gem = {
 
 tower.laser = {
     // Display
-    color: [25, 181, 254],
-    length: 0.55,
-    radius: 0.8,
+    color: [185, 0, 0],
+    length: 1,
+    width: 1,
+    radius: 1,
     secondary: [149, 165, 166],
     width: 0.25,
     // Misc
     name: 'laser',
     title: 'Laser Tower',
+    imageBase: 'laser',
+    imageBarrel: 'lasercannon',
     // Stats
-    cooldownMax: 1,
+    cooldownMax: 30,
+    cooldownMin: 5,
     cost: 75,
-    damageMax: 3,
+    damageMax: 8,
+    damageMin: 2,
     range: 2,
     type: 'energy',
     // Upgrades
     upgrades: [
         {
             // Display
-            color: [78, 205, 196],
-            length: 0.65,
-            radius: 0.9,
+            color: [0, 185, 185],
+            length: 1,
+            radius: 1,
             secondary: [191, 191, 191],
             weight: 3,
             width: 0.35,
             // Misc
             name: 'beamEmitter',
             title: 'Beam Emitter',
+            imageBase: 'laser3',
+            imageBarrel: 'lasercannon3',
             // Stats
             cooldownMax: 0,
             cost: 200,
@@ -234,7 +239,45 @@ tower.laser = {
                 var damage = d * sq(this.duration);
                 e.dealDamage(damage, this.type);
                 this.onHit(e);
-            }
+            },
+            upgrades: [
+                {
+                    // Display
+                    color: [0, 255, 255],
+                    // Misc
+                    name: 'beamEmitterplus',
+                    title: 'Beam Emitter Plus',
+                    imageBase: 'laser4',
+                    imageBarrel: 'lasercannon4',
+                    // Stats
+                    cooldownMax: 0,
+                    cost: 500,
+                    damageMax: 0.5,
+                    damageMin: 0.0001,
+                    range: 3.5
+                }
+            ]
+        },
+        {
+            // Display
+            color: [0, 185, 185],
+            length: 0.65,
+            radius: 1,
+            secondary: [191, 191, 191],
+            weight: 3,
+            width: 0.35,
+            // Misc
+            name: 'laserplus',
+            title: 'Laser Tower +',
+            imageBase: 'laser2',
+            imageBarrel: 'lasercannon2',
+            // Stats
+            cooldownMax: 40,
+            cooldownMin: 5,
+            cost: 200,
+            damageMax: 20,
+            damageMin: 4,
+            range: 4
         }
     ]
 };
