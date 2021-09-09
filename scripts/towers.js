@@ -11,7 +11,8 @@ var tower = {};
 
 tower.gun = {
     baseOnTop: false,
-    length: 0.8,
+    length: 1,
+    width: 1,
     radius: 1,
     // Display
     color: [179, 179, 179],
