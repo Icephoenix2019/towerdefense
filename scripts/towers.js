@@ -10,6 +10,7 @@ var tower = {};
 
 
 tower.gun = {
+    baseOnTop: false,
     length: 0.8,
     radius: 1,
     // Display
