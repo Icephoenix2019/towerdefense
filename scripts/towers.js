@@ -161,8 +161,8 @@ tower.gem = {
                 fill(this.color[0], this.color[1], this.color[2], 127);
                 var r = this.range * 2 + 1;
                 ellipse(this.pos.x, this.pos.y, r * ts, r * ts);
-                for (var i = 0; i < entities.length; i++) {
-                    this.onAim(entities[1]);
+                for (var i = 0; i < entities.length) {
+                    this.onAim(entities[i]);
                 }
             },
                 upgrades: [
