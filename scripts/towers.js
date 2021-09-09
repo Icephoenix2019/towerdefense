@@ -147,11 +147,23 @@ tower.gem = {
             damageMax: 0,
             damageMin: 0,
             range: 200,
-            onHit: function(e) {
-                cash += 0;
-            },
+            onHit: function(e) {},
             attack: function(e) {
                 cash += 5;
+            },
+            target: function(entities) {
+                if (stopFiring) return;
+                entities = this.visible(entities);
+                if (entities.length === 0) return;
+                if (!this.canFire()) return;
+                this.resetCooldown();
+                noStroke();
+                fill(this.color[0], this.color[1], this.color[2], 127);
+                var r = this.range * 2 + 1;
+                ellipse(this.pos.x, this.pos.y, r * ts, r * ts);
+                for (var i = 0; i < entities.length; i++) {
+                    this.onAim(entities[1]);
+                }
             },
                 upgrades: [
                 {
@@ -167,9 +179,7 @@ tower.gem = {
                     cost: 700,
                     damageMax: 0,
                     damageMin: 0,
-                    onHit: function(e) {
-                        cash += 0;
-                    },
+                    onHit: function(e) {},
                     attack: function(e) {
                         cash += 12;
                     }
