@@ -147,7 +147,9 @@ tower.gem = {
             damageMax: 0,
             damageMin: 0,
             range: 200,
-            onHit: function(e) {},
+            onHit: function(e) {
+                cash += 0;
+            },
             attack: function(e) {
                 cash += 5;
             },
@@ -165,6 +167,9 @@ tower.gem = {
                     cost: 700,
                     damageMax: 0,
                     damageMin: 0,
+                    onHit: function(e) {
+                        cash += 0;
+                    },
                     attack: function(e) {
                         cash += 12;
                     }
