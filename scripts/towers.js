@@ -32,6 +32,7 @@ tower.gun = {
             // Misc
             name: 'machineGun',
             title: 'Machine Gun',
+            imageBase: 'basic2',
             // Stats
             cooldownMax: 5,
             cooldownMin: 0,
@@ -45,6 +46,7 @@ tower.gun = {
                     // Misc
                     name: 'machineGunplus',
                     title: 'Machine Gun Plus',
+                    imageBase: 'basic3',
                     // Stats
                     cooldownMax: 5,
                     cooldownMin: 0,
