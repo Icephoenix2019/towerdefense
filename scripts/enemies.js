@@ -239,3 +239,13 @@ enemy.spawner = {
         }
     }
 };
+
+// EVENT ENEMIES
+enemy.error = {
+    // Misc
+    name: 'error',
+    // Stats
+    cash: 5,
+    health: 50,
+    imageType: 'error'
+};
