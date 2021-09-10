@@ -516,7 +516,7 @@ function randomWave() {
 
     if (name === 'windows') {
         if (isWave(0, 3)) {
-            waves.push([8, ['error', 50]]);
+            waves.push([40, ['error', 8]]);
         }
     } else {
     if (isWave(0, 3)) {
