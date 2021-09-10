@@ -256,7 +256,7 @@ enemy.warning = {
     // Stats
     cash: 3,
     health: 30,
-    imageType: 'error',
+    imageType: 'warning',
     speed: 2
 };
 
