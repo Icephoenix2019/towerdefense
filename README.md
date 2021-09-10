@@ -1,5 +1,5 @@
 # Tower Defense 2 (Improvised)
-This is one of m old projects that i am bringing back to life! This is all made thanks to rsaihe!
+This is one of my old projects that i am bringing back to life! This is all made thanks to rsaihe!
 Play the original [here](https://rsaihe.github.io/towerdefense/).
 
 You can also make and edit custom maps using this
