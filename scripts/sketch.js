@@ -423,6 +423,7 @@ function loadImages() {
     imagelib.lasercannon2 = loadImage('img/lasercannon2.png');
     imagelib.lasercannon3 = loadImage('img/lasercannon3.png');
     imagelib.lasercannon4 = loadImage('img/lasercannon4.png');
+    imagelib.error = loadImage('img/msg_error-2.png');
   
 }
 
