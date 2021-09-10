@@ -424,6 +424,9 @@ function loadImages() {
     imagelib.lasercannon3 = loadImage('img/lasercannon3.png');
     imagelib.lasercannon4 = loadImage('img/lasercannon4.png');
     imagelib.error = loadImage('img/msg_error-2.png');
+    imagelib.warning = loadImage('img/msg_warning-2.png');
+    imagelib.logo = loadImage('img/windows-4.png');
+    imagelib.restrict = loadImage('img/trust1_restrict-1.png');
   
 }
 
