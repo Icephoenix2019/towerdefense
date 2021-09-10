@@ -246,6 +246,45 @@ enemy.error = {
     name: 'error',
     // Stats
     cash: 5,
-    health: 50,
+    health: 40,
     imageType: 'error'
+};
+
+enemy.warning = {
+    // Misc
+    name: 'warning',
+    // Stats
+    cash: 3,
+    health: 30,
+    imageType: 'warning',
+    speed: 2
+};
+
+enemy.restrict = {
+    // Misc
+    name: 'restrict',
+    // Stats
+    cash: 10,
+    health: 100,
+    immune: ['regen'],
+    imageType: 'restrict',
+    speed: 1.25,
+    // Methods
+    onTick: function() {
+        var affected = getInRange(this.pos.x, this.pos.y, 2, enemies);
+        for (var i = 0; i < affected.length; i++) {
+            affected[i].applyEffect('regen', 1);
+        }
+    }
+};
+
+enemy.logo = {
+    // Misc
+    name: 'logo',
+    // Stats
+    cash: 50,
+    health: 800,
+    immune: ['explosion','poison','slow'],
+    imageType: 'logo',
+    speed: 1
 };
