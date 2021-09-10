@@ -333,7 +333,6 @@ function loadMap() {
         resizeFit();
     } else if (name === 'windows') {
         cash = 100;
-    }
     } else {
         resizeMax();
         var numSpawns;
