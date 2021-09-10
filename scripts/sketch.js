@@ -364,6 +364,7 @@ function loadMap() {
         borderAlpha = 31;
         // Misc
         metadata = buildArray(cols, rows, null);
+    }
 
     tempSpawns = [];
 
