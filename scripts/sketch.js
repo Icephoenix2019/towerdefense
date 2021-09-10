@@ -518,8 +518,35 @@ function randomWave() {
     var name = document.getElementById('map').value;
 
     if (name === 'windows') {
-        if (isWave(0, 3)) {
+        if (isWave(0, 2)) {
             waves.push([40, ['error', 8]]);
+        }
+        if (isWave(3, 4)) {
+            waves.push([40, ['warning', 4]]);
+            waves.push([80, ['error', 4]]);
+        }
+        if (isWave(5, 6)) {
+            waves.push([80, ['warning', 4]]);
+            waves.push([40, ['error', 6]]);
+        }
+        if (isWave(7, 8)) {
+            waves.push([30, ['error', 10]]);
+        }
+        if (isWave(9)) {
+            waves.push([20, ['restrict', 3]]);
+            waves.push([40, ['error', 10]]);
+        }
+        if (isWave(10)) {
+            waves.push([20, ['error', 10]]);
+        }
+        if (isWave(11, 12)) {
+            waves.push([20, ['warning', 10]]);
+        }
+        if (isWave(13, 14)) {
+            waves.push([20, ['restrict', 3]]);
+            waves.push([40, ['warning', 10]]);
+            waves.push([20, ['restrict', 3]]);
+            waves.push([30, ['error', 20]]);
         }
     } else {
     if (isWave(0, 3)) {
