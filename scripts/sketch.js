@@ -331,9 +331,6 @@ function loadMap() {
         rows = m.rows;
 
         resizeFit();
-        if (name === 'windows') {
-          cash = 100;
-        }
     } else {
         resizeMax();
         var numSpawns;
