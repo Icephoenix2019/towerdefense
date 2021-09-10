@@ -23,6 +23,7 @@ class Enemy {
         this.weak = [];             // increased damage from these damage types
         this.speed = 1;             // 4 is the max
         this.taunt = false;         // force towers to target
+        this.imageType = null;
     }
 
     // Apply new status effect
@@ -36,9 +37,13 @@ class Enemy {
     }
 
     draw() {
-        stroke(0);
-        fill(this.getColor());
-        ellipse(this.pos.x, this.pos.y, this.radius * ts, this.radius * ts);
+    if (imagelib.hasOwnProperty(this.imageType)) {
+            image(imagelib[this.imageType], this.pos.x - 12, this.pos.y - 12, this.radius * ts, this.radius * ts);
+        } else {
+            stroke(0);
+            fill(this.getColor());
+            ellipse(this.pos.x, this.pos.y, this.radius * ts, this.radius * ts);
+        }
     }
 
     // Subtract damage amount from health, account for resistances, etc.
