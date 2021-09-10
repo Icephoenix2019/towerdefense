@@ -522,18 +522,18 @@ function randomWave() {
             waves.push([40, ['error', 8]]);
         }
         if (isWave(3, 4)) {
-            waves.push([40, ['warning', 4]]);
-            waves.push([80, ['error', 4]]);
+            waves.push([40, ['warning', 8]]);
+            waves.push([80, ['error', 8]]);
         }
         if (isWave(5, 6)) {
-            waves.push([80, ['warning', 4]]);
-            waves.push([40, ['error', 6]]);
+            waves.push([80, ['warning', 8]]);
+            waves.push([40, ['error', 8]]);
         }
         if (isWave(7, 8)) {
             waves.push([30, ['error', 10]]);
         }
         if (isWave(9)) {
-            waves.push([20, ['restrict', 3]]);
+            waves.push([20, ['restrict', 8]]);
             waves.push([40, ['error', 10]]);
         }
         if (isWave(10)) {
@@ -543,9 +543,9 @@ function randomWave() {
             waves.push([20, ['warning', 10]]);
         }
         if (isWave(13, 14)) {
-            waves.push([20, ['restrict', 3]]);
+            waves.push([20, ['restrict', 8]]);
             waves.push([40, ['warning', 10]]);
-            waves.push([20, ['restrict', 3]]);
+            waves.push([20, ['restrict', 8]]);
             waves.push([30, ['error', 20]]);
         }
     } else {
@@ -644,6 +644,7 @@ function randomWave() {
     if (isWave(35)) {
         waves.push([0, ['taunt', 'faster', 200]]);
     }
+}
     return random(waves);
 }
 
