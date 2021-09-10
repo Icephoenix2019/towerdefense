@@ -522,8 +522,7 @@ function randomWave() {
             waves.push([40, ['error', 8]]);
         }
         if (isWave(2, 4)) {
-            waves.push([40, ['warning', 8]]);
-            waves.push([80, ['error', 8]]);
+            waves.push([40, ['error', 'warning', 8]]);
         }
         if (isWave(4, 6)) {
             waves.push([80, ['warning', 8]]);
@@ -533,8 +532,7 @@ function randomWave() {
             waves.push([30, ['error', 10]]);
         }
         if (isWave(8, 9)) {
-            waves.push([20, ['restrict', 8]]);
-            waves.push([40, ['error', 10]]);
+            waves.push([40, ['error', 'restrict', 8]]);
         }
         if (isWave(9, 10)) {
             waves.push([20, ['error', 10]]);
@@ -543,10 +541,10 @@ function randomWave() {
             waves.push([20, ['warning', 10]]);
         }
         if (isWave(12, 14)) {
-            waves.push([20, ['restrict', 8]]);
-            waves.push([40, ['warning', 10]]);
-            waves.push([20, ['restrict', 8]]);
-            waves.push([30, ['error', 20]]);
+            waves.push([20, ['error', 'warning', 50], ['restrict', 2]]);
+        }
+        if (isWave(14, 15)) {
+            waves.push([20, ['logo', 1]]);
         }
     } else {
     if (isWave(0, 3)) {
