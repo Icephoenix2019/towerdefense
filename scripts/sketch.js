@@ -644,7 +644,6 @@ function randomWave() {
     if (isWave(35)) {
         waves.push([0, ['taunt', 'faster', 200]]);
     }
-}
     return random(waves);
 }
 
