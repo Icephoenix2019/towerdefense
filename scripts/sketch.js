@@ -331,6 +331,9 @@ function loadMap() {
         rows = m.rows;
 
         resizeFit();
+    } else if (name === 'windows') {
+        cash = 100;
+    }
     } else {
         resizeMax();
         var numSpawns;
@@ -364,7 +367,6 @@ function loadMap() {
         borderAlpha = 31;
         // Misc
         metadata = buildArray(cols, rows, null);
-    }
 
     tempSpawns = [];
 
