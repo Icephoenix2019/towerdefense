@@ -512,7 +512,13 @@ function randomTile() {
 // Generate a random wave
 function randomWave() {
     var waves = [];
+    var name = document.getElementById('map').value;
 
+    if (name === 'windows') {
+        if (isWave(0, 3)) {
+            waves.push([8, ['error', 50]]);
+        }
+    } else {
     if (isWave(0, 3)) {
         waves.push([40, ['weak', 50]]);
     }
@@ -608,7 +614,7 @@ function randomWave() {
     if (isWave(35)) {
         waves.push([0, ['taunt', 'faster', 200]]);
     }
-
+}
     return random(waves);
 }
 
