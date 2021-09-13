@@ -77,7 +77,7 @@ class Tower {
     // Draw barrel of tower (moveable part)
     drawBarrel() {
     if (imagelib.hasOwnProperty(this.imageBarrel)) {
-            image(imagelib[this.imageBarrel], -16, 0, this.length * ts, this.width * ts * 2);
+            image(imagelib[this.imageBarrel], 0, this.width * ts - 8, this.length * ts, this.width * ts );
         } else {
         stroke(this.border);
         fill(this.secondary);
@@ -88,7 +88,7 @@ class Tower {
     // Draw base of tower (stationary part)
     drawBase() {
         if (imagelib.hasOwnProperty(this.imageBase)) {
-            image(imagelib[this.imageBase], this.pos.x - 16 * ts, this.pos.y - 16 * ts, this.radius * ts, this.radius * ts);
+            image(imagelib[this.imageBase], this.pos.x - ts / 2, this.pos.y - ts / 2, this.radius * ts, this.radius * ts);
         } else {
             stroke(this.border);
             fill(this.color);
