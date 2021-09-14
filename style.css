@@ -187,11 +187,11 @@ button {
 /* Tower types */
 
 .gun {
-    background-color: rgb(249, 191, 59);
+    background-color: rgb(148, 148, 148);
 }
 
 .laser {
-    background-color: rgb(25, 181, 254);
+    background-color: rgb(153, 0, 0);
 }
 
 .slow {
@@ -215,5 +215,5 @@ button {
 }
 
 .gem {
-    background-color: rgb(255, 255, 0);
+    background-color: rgb(202, 90, 214);
 }
