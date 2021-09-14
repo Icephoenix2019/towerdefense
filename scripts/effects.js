@@ -51,3 +51,25 @@ effects.regen = {
         if (e.health < e.maxHealth && random() < 0.2) e.health++;
     }
 };
+
+effects.acid = {
+    // Display
+    color: [47, 92, 47],
+    // Misc
+    name: 'acid',
+    // Methods
+    onTick: function(e) {
+        e.dealDamage(3, 'poison');
+    }
+};
+
+effects.burn = {
+    // Display
+    color: [240, 123, 34],
+    // Misc
+    name: 'burn',
+    // Methods
+    onTick: function(e) {
+        e.dealDamage(1, 'fire');
+    }
+};
