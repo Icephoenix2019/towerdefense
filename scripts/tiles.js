@@ -74,5 +74,13 @@ var tiles = {
     c2_navyBlue: [1, 18, 57],
     c2_darkBlue: [3, 36, 97],
     c2_paleYellow: [232, 228, 197],
-    c2_lightYellow: [248, 241, 193]
+    c2_lightYellow: [248, 241, 193],
+    // Liquid Set 1
+    water: function() {
+        fill(49, 157, 204);
+        var side = 0.25 * ts;
+        var back = 0.25 * ts;
+        fill(19, 75, 158);
+        rect(-back, -side, back * 2, side * 2);
+    }
 };
