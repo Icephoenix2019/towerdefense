@@ -60,6 +60,86 @@ tower.gun = {
     ]
 };
 
+tower.flame = {
+    baseOnTop: false,
+    length: 0.80,
+    radius: 1,
+    // Display
+    color: [204, 99, 0],
+    secondary: [149, 165, 166],
+    // Misc
+    name: 'flame',
+    title: 'FlameThrower Tower',
+    imageBase: 'fire2',
+    imageBarrel: 'fire7',
+    // Stats
+    cooldownMax: 5,
+    cooldownMin: 1,
+    damageMax: 3,
+    damageMin: 1,
+    cost: 300,
+    range: 2,
+    // Upgrades
+    onHit: function(e) {
+        e.applyEffect('burn', 20);
+    },
+    upgrades: [
+        {
+            // Display
+            color: [255, 72, 0],
+            // Misc
+            name: 'pyro',
+            title: 'PyroTechnics Tower',
+            imageBase: 'fire3',
+            // Stats
+            cooldownMax: 50,
+            cooldownMin: 20,
+            cost: 200,
+            damageMax: 20,
+            damageMin: 10,
+            onHit: function(e) {
+                e.applyEffect('burn', 40);
+            },
+                upgrades: [
+                {
+                    // Display
+                    color: [255, 0, 0],
+                    // Misc
+                    name: 'pyroplus',
+                    title: 'PyroTechnics Tower +',
+                    imageBase: 'fire6',
+                    imageBarrel: 'fire8',
+                    // Stats
+                    cooldownMax: 50,
+                    cooldownMin: 20,
+                    cost: 400,
+                    damageMax: 30,
+                    damageMin: 15,
+                    onHit: function(e) {
+                        e.applyEffect('burn', 50);
+                    },
+                    // Display
+                    color: [45, 128, 56],
+                    // Misc
+                    name: 'acidsprayer',
+                    title: 'Acid Sprayer',
+                    imageBase: 'fire4',
+                    imageBarrel: 'fire5',
+                    // Stats
+                    cooldownMax: 5,
+                    cooldownMin: 1,
+                    cost: 800,
+                    damageMax: 8,
+                    damageMin: 5,
+                    onHit: function(e) {
+                        e.applyEffect('acid', 20);
+                    }
+                }
+            ]
+        }
+    ]
+};
+
 tower.gem = {
     length: 0.8,
     radius: 1,
@@ -71,8 +151,8 @@ tower.gem = {
     title: 'Gem Tower',
     imageBase: 'basic',
     // Stats
-    cooldownMax: 10,
-    cooldownMin: 1,
+    cooldownMax: 60,
+    cooldownMin: 30,
     damageMax: 0,
     damageMin: 0,
     cost: 125,
@@ -108,8 +188,8 @@ tower.gem = {
             title: 'Gem Tower +',
             imageBase: 'basic2',
             // Stats
-            cooldownMax: 8,
-            cooldownMin: 1,
+            cooldownMax: 40,
+            cooldownMin: 30,
             cost: 125,
             damageMax: 0,
             damageMin: 0,
