@@ -417,6 +417,13 @@ function loadImages() {
     imagelib.laser2 = loadImage('img/laser2.png');
     imagelib.laser3 = loadImage('img/laser3.png');
     imagelib.laser4 = loadImage('img/laser4.png');
+    imagelib.fire2 = loadImage('img/fire2.png');
+    imagelib.fire3 = loadImage('img/fire3.png');
+    imagelib.fire4 = loadImage('img/fire4.png');
+    imagelib.fire5 = loadImage('img/fire5.png');
+    imagelib.fire6 = loadImage('img/fire6.png');
+    imagelib.fire7 = loadImage('img/fire7.png');
+    imagelib.fire8 = loadImage('img/fire8.png');
     imagelib.flak = loadImage('img/flak.png');
     imagelib.flakcannon = loadImage('img/flakcannon.png');
     imagelib.lasercannon = loadImage('img/lasercannon.png');
