@@ -201,8 +201,8 @@ tower.laser = {
     cooldownMax: 30,
     cooldownMin: 5,
     cost: 75,
-    damageMax: 8,
-    damageMin: 2,
+    damageMax: 25,
+    damageMin: 5,
     range: 2,
     type: 'energy',
     // Upgrades
@@ -252,15 +252,15 @@ tower.laser = {
                     // Stats
                     cooldownMax: 0,
                     cost: 500,
-                    damageMax: 0.5,
-                    damageMin: 0.0001,
+                    damageMax: 0.25,
+                    damageMin: 0.001,
                     range: 3.5
                 }
             ]
         },
         {
             // Display
-            color: [0, 185, 185],
+            color: [200, 0, 0],
             length: 1,
             radius: 1,
             secondary: [191, 191, 191],
@@ -275,8 +275,8 @@ tower.laser = {
             cooldownMax: 40,
             cooldownMin: 5,
             cost: 200,
-            damageMax: 20,
-            damageMin: 4,
+            damageMax: 50,
+            damageMin: 10,
             range: 4
         }
     ]
