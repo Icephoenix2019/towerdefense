@@ -76,11 +76,21 @@ var tiles = {
     c2_paleYellow: [232, 228, 197],
     c2_lightYellow: [248, 241, 193],
     // Liquid Set 1
-    water: function() {
+    water: function(x, y, dir) {
+        if (dir === 0) return;
+        push();
+        var c = center(x, y);
+        translate(c.x, c.y);
+        rotate([0, PI / 2][(dir - 1) % 2]);
+
         fill(49, 157, 204);
+        rect(x * ts, y * ts, ts, ts);
         var side = 0.25 * ts;
         var back = 0.25 * ts;
+        rectMode(CENTER);
         fill(19, 75, 158);
-        rect(-back, -side, back * 2, side * 2);
+        rect(-back, -side, back * 2, side * 2, 10);
+
+        pop();
     }
 };
