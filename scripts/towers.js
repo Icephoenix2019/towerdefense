@@ -72,7 +72,7 @@ tower.flame = {
     title: 'FlameThrower Tower',
     imageBase: 'fire2',
     imageBarrel: 'fire7',
-    imageTurret = true,
+    imageTurret: true,
     // Stats
     cooldownMax: 5,
     cooldownMin: 1,
