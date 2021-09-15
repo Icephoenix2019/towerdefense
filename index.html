@@ -33,10 +33,12 @@
           <div class="group">
             <p><button class="io" onclick="importMap(prompt('Input map string:'))">Import map (M)</button></p>
             <p><button class="io" onclick="copyToClipboard(exportMap())">Export map (X)</button></p>
+            <p><button class="io" onclick="importSave(prompt('Input Save JSON:'))">Import Save</button></p>
+            <p><button class="io" onclick="exportSave(exportMap())">Export Save</button></p>
           </div>
           <p>Edit maps <a href="https://rsaihe.github.io/td-editor/" target="_blank">here</a>.</p>
         </aside>
-        <aside id="store">
+        <aside id="store" style = "width: 150px; height: 150px; line-height: 3em; overflow:scroll; border: thin rgb(0, 255, 0) solid; padding: 5px;">
           <h2>Store</h2>
           <div class="group">
             <p><button class="gun" onclick="setPlace('gun')">Gun Tower (1)</button></p>
