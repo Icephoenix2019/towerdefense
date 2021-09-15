@@ -270,18 +270,18 @@ function importMap(str) {
     } catch (err) {}
 }
 
-function importSave(Str) {
+function importSave() {
     try {
         savedata = JSON.parse(localStorage["savedata"]);
         pause();
     } catch (err) {}
 }
 
-function exportSave(Str) {
+function exportSave() {
     try {
         localStorage["savedata"] = JSON.stringify(savedata);
         pause();
-        } catch (err) {}
+    } catch (err) {}
 }
 
 // Check if wave is at least min and less than max
