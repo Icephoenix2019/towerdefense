@@ -63,6 +63,7 @@ tower.gun = {
 tower.flame = {
     baseOnTop: false,
     length: 0.80,
+    width: 1,
     radius: 1,
     // Display
     color: [204, 99, 0],
