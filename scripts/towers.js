@@ -119,7 +119,9 @@ tower.flame = {
                     damageMin: 15,
                     onHit: function(e) {
                         e.applyEffect('burn', 50);
-                    },
+                    }
+                },
+                    {
                     // Display
                     color: [45, 128, 56],
                     // Misc
