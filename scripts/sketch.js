@@ -78,7 +78,7 @@ var wallCover = 0.1;    // percentage of map covered by walls
 var waveCool = 120;     // number of ticks between waves
 var weakness = 0.5;     // damage increase from weakness
 var isWindowsTowerUnlocked = false;   //Is Windows Tower unlocked?
-var savedata {
+var savedata = {
     isWindowsTowerUnlocked: false
 };
 // Misc functions
