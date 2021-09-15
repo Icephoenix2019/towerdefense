@@ -63,7 +63,7 @@ tower.gun = {
 tower.flame = {
     baseOnTop: false,
     length: 0.80,
-    width: 1,
+    width: 0.80,
     radius: 1,
     // Display
     color: [204, 99, 0],
@@ -75,11 +75,11 @@ tower.flame = {
     imageBarrel: 'fire7',
     imageTurret: true,
     // Stats
-    cooldownMax: 5,
+    cooldownMax: 10,
     cooldownMin: 1,
     damageMax: 3,
     damageMin: 1,
-    cost: 300,
+    cost: 180,
     range: 2,
     // Upgrades
     onHit: function(e) {
@@ -97,8 +97,8 @@ tower.flame = {
             cooldownMax: 50,
             cooldownMin: 20,
             cost: 200,
-            damageMax: 20,
-            damageMin: 10,
+            damageMax: 40,
+            damageMin: 15,
             onHit: function(e) {
                 e.applyEffect('burn', 40);
             },
@@ -115,8 +115,8 @@ tower.flame = {
                     cooldownMax: 50,
                     cooldownMin: 20,
                     cost: 400,
-                    damageMax: 30,
-                    damageMin: 15,
+                    damageMax: 80,
+                    damageMin: 30,
                     onHit: function(e) {
                         e.applyEffect('burn', 50);
                     }
@@ -133,8 +133,8 @@ tower.flame = {
                     cooldownMax: 5,
                     cooldownMin: 1,
                     cost: 800,
-                    damageMax: 8,
-                    damageMin: 5,
+                    damageMax: 2,
+                    damageMin: 2,
                     onHit: function(e) {
                         e.applyEffect('acid', 20);
                     }
