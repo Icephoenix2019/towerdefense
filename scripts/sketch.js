@@ -77,8 +77,10 @@ var sellConst = 0.8;    // ratio of tower cost to sell price
 var wallCover = 0.1;    // percentage of map covered by walls
 var waveCool = 120;     // number of ticks between waves
 var weakness = 0.5;     // damage increase from weakness
-
-
+var isWindowsTowerUnlocked = false;   //Is Windows Tower unlocked?
+var savedata {
+    isWindowsTowerUnlocked: false
+};
 // Misc functions
 
 // Spawn a group of enemies, alternating if multiple types
@@ -266,6 +268,20 @@ function importMap(str) {
         document.getElementById('custom').selected = true;
         resetGame();
     } catch (err) {}
+}
+
+function importSave(Str) {
+    try {
+        savedata = JSON.parse(localStorage["savedata"]);
+        pause();
+    } catch (err) {}
+}
+
+function exportSave(Str) {
+    try {
+        localStorage["savedata"] = JSON.stringify(savedata);
+        pause();
+        } catch (err) {}
 }
 
 // Check if wave is at least min and less than max
@@ -553,6 +569,10 @@ function randomWave() {
         if (isWave(14, 15)) {
             waves.push([20, ['logo', 1]]);
         }
+        if (isWindowsTowerUnlocked == false) {
+           isWindowsTowerUnlocked = true;
+        }
+        return random(waves);
     } else {
     if (isWave(0, 3)) {
         waves.push([40, ['weak', 50]]);
@@ -737,6 +757,7 @@ function resetGame() {
     toCooldown = false;
     toPathfind = false;
     toPlace = false;
+    isWindowsTowerUnlocked = false;
     // Start game
     nextWave();
 }
