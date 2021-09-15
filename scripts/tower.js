@@ -21,6 +21,7 @@ class Tower {
         this.title = 'Tower';
         this.imageBase = null;
         this.imageBarrel = null;
+        this.imageTurret = false;
 
         // Position
         this.angle = 0;
