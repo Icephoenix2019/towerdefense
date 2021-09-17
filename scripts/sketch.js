@@ -279,7 +279,7 @@ function importSave(str) {
 
 function exportSave() {
     return LZString.compressToBase64(JSON.stringify({
-        isWindowsTowerUnlocked = isWindowsTowerUnlocked
+        savedata: {isWindowsTowerUnlocked = true};
     }));
 }
 
@@ -756,7 +756,6 @@ function resetGame() {
     toCooldown = false;
     toPathfind = false;
     toPlace = false;
-    isWindowsTowerUnlocked = false;
     // Start game
     nextWave();
 }
@@ -814,7 +813,7 @@ function updateInfo(t) {
     document.getElementById('upPrice').innerHTML = 'Upgrade 1 price: ' +
     (t.upgrades.length > 0 ? '$' + t.upgrades[0].cost : 'N/A');
     document.getElementById('upPrice2').innerHTML = 'Upgrade 2 price: ' +
-    (t.upgrades.length > 1 ? '$' + t.upgrades[0].cost : 'N/A');
+    (t.upgrades.length > 1 ? '$' + t.upgrades[1].cost : 'N/A');
     document.getElementById('damage').innerHTML = 'Damage: ' + t.getDamage();
     document.getElementById('type').innerHTML = 'Type: ' +
     t.type.toUpperCase();
