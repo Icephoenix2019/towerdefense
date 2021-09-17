@@ -270,18 +270,17 @@ function importMap(str) {
     } catch (err) {}
 }
 
-function importSave() {
+function importSave(str) {
     try {
-        savedata = JSON.parse(localStorage["savedata"]);
-        pause();
+        savedata = JSON.parse(LZString.decompressFromBase64(str));
+        resetGame();
     } catch (err) {}
 }
 
 function exportSave() {
-    try {
-        localStorage["savedata"] = JSON.stringify(savedata);
-        pause();
-    } catch (err) {}
+    return LZString.compressToBase64(JSON.stringify({
+        isWindowsTowerUnlocked = true;
+    }));
 }
 
 // Check if wave is at least min and less than max
