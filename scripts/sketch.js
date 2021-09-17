@@ -279,7 +279,7 @@ function importSave(str) {
 
 function exportSave() {
     return LZString.compressToBase64(JSON.stringify({
-        isWindowsTowerUnlocked = true
+        isWindowsTowerUnlocked = isWindowsTowerUnlocked
     }));
 }
 
