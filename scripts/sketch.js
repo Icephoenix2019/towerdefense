@@ -77,7 +77,7 @@ var sellConst = 0.8;    // ratio of tower cost to sell price
 var wallCover = 0.1;    // percentage of map covered by walls
 var waveCool = 120;     // number of ticks between waves
 var weakness = 0.5;     // damage increase from weakness
-var isWindowsTowerUnlocked = false;   //Is Windows Tower unlocked?
+var isWindowsTowerUnlocked = false
 var savedata = {
     isWindowsTowerUnlocked: false
 };
@@ -272,15 +272,15 @@ function importMap(str) {
 
 function importSave(str) {
     try {
-        savedata = JSON.parse(LZString.decompressFromBase64(str));
+        savedata = JSON.parse(str);
         resetGame();
     } catch (err) {}
 }
 
 function exportSave() {
-    return LZString.compressToBase64(JSON.stringify({
-        savedata: 'isWindowsTowerUnlocked = true'
-    }));
+    return JSON.stringify({
+        isWindowsTowerUnlocked: true
+    });
 }
 
 // Check if wave is at least min and less than max
@@ -793,6 +793,13 @@ function setPlace(t) {
     updateInfo(createTower(0, 0, tower[towerType]));
 }
 
+document.getElementById('computer').addEventListener('click', () => {
+    if (savedata.isWindowsTowerUnlocked == true) {
+        setPlace('flame')
+    } else {
+        alert("Complete the windows event!")
+    }
+})
 // Visualize range of tower
 function showRange(t, cx, cy) {
     stroke(255);
